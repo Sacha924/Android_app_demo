@@ -1,0 +1,3 @@
+- Une activité ou un fragment est constitué de 2 fichiers : une classe Java et un fichier XML.
+- La classe Java appelée `R` permet de référencer les ressources depuis le code Java.
+- Le lien entre une classe de type Activity et son XML est effectué via la fonction `setContentView()` . Pour un fragment, c’est au cœur de la fonction `onCreateView()` que la liaison est faite.
