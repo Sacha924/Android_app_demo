@@ -59,3 +59,20 @@ Une bonne pratique sur Android consiste à avoir une activité unique qui est le
 > Le Repository est le seul à pouvoir accéder aux données.
 
 > Il convient de créer un Repository par type de donnée dont l’application a besoin.
+
+> Il est d’usage de positionner tous les fichiers relatifs à l’interface d’une application au même endroit, par exemple un package nommé ui  . 
+
+> Le ViewModel  contient la logique spécifique à l’affichage d’un écran sous forme d’états et d’événements.
+
+> Google fournit une classe ViewModel  spécifique à Android, qui permet de stocker les variables qu’elle contient en tenant compte des changements de configuration de la vue qui la manipule.
+
+> Google fournit les LiveData  pour exposer les états à la vue sous forme d’observables.
+
+> On initialise un LiveData  via la classe MutableLiveData. Pour lire sa valeur, on utilise la fonction getValue()  ; pour remplacer sa valeur, on utilise la fonction postValue().
+
+> La classe Dialog  permet d’afficher une popup. Pour créer une instance de Dialog  avec un style par défaut, nous pouvons utiliser AlertDialog.Builder.
+
+> Pour utiliser un ViewModel depuis une vue, il faut l’instancier via la classe ViewModelProvider  fournie par Google. 
+
+> Pour observer un LiveData et réagir à ses changements de valeur, il faut appeler la fonction observe().
+
