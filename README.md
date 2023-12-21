@@ -37,3 +37,25 @@ Une bonne pratique sur Android consiste à avoir une activité unique qui est le
 > Pour naviguer vers ce fragment, il faut utiliser le FragmentManager  . 
 
 > Le FragmentManager  permet de définir quel fragment ajouter, supprimer ou remplacer, via une transaction.
+
+> Appliquer un patron d’architecture permet de structurer le code d’une application dans le but de le rendre plus lisible, maintenable et testable.
+
+> Il existe différents patrons d’architecture, mais Google préconise aujourd’hui l’architecture MVVM. 
+
+> MVVM signifie Model-View-ViewModel.
+
+> MVVM applique le principe de conception de séparation des préoccupations en structurant le code d’une application en deux couches : Vue et Données, avec une classe de type ViewModel pour faire la liaison entre ces deux couches et personnaliser les données en fonction des besoins de la vue.
+
+> Une classe de type ViewModel expose à la vue les données à afficher, appelé états, et expose des fonctions permettant de manipuler l’état en réponses aux événements qui ont lieu sur l’interface. 
+
+> Pour concevoir la couche Données d’une fonctionnalité, il faut identifier les modèles de données spécifiques à l’application, et créer un objet Java pour chaque modèle.
+
+> Il est d’usage de positionner tous les fichiers relatifs à la couche Données au même endroit, par exemple dans un package data  .
+
+> Les données d’une application peuvent provenir de différentes sources : un fichier, une base de données locale, une API externe, etc.
+
+> Une fois la provenance des données déterminée, la logique permettant d’arbitrer quelles données utiliser se trouve dans une classe de type Repository. 
+
+> Le Repository est le seul à pouvoir accéder aux données.
+
+> Il convient de créer un Repository par type de donnée dont l’application a besoin.
