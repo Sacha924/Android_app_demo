@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.ui;
 
         import android.os.Bundle;
 
@@ -14,8 +14,8 @@ package com.example.myapplication;
         import android.view.View;
         import android.view.ViewGroup;
 
+        import com.example.myapplication.R;
         import com.example.myapplication.databinding.FragmentWelcomeBinding;
-        import android.util.Log;
 
 public class WelcomeFragment extends Fragment {
     private FragmentWelcomeBinding binding;
